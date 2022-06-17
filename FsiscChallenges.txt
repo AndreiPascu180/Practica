@@ -1,0 +1,30 @@
+Crypto 1
+cat flag.txt | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base64 -d
+ATM{807d0fbcae7c4b20518d4d85664f6820aafdf936104122c5073e7744c46c4b87} 
+Se observa din formatul datelor comanda care urmeaza: daca sunt doar caractere hexa se foloseste xxd -r (reverse) si -p(pt afisare in stream de caractere), daca la final sunt mai mult de 2 egaluri se foloseste base32 , altfel base64 
+
+Networking 1
+Aplicam filtrul icmp.type == 0 pentru a vizualiza doar pachetele de tip icmp echo reply si in ordinea inregistrariipachetelor incercam sa gasim inceputul flagului CSSC{ si apoi urmarim caracterele din aceeasi pozitie cu cele gasite pentru a reface flagul din interiorul {}.
+CSSC{ech0_request_3cho_r3ply}
+
+
+Networking 2
+Aplicam filtrul (dns.response_in) && (dns.qry.type == 1) pentru a vedea fiecare incercare de conectare o singura data (ne intereseaza doar site-ul la care se incerca rezolvarea numelui de domeniu) si luam primele 4 caractere de lainceputul numelui care reprezinta litere codificate ascii (dar in hex) si cautam Ha (0x4861) iar de acolo luam la rand cei 2 octeti din nume si translatam in litere obtinand:
+HackIT{DNS_Xfiltr@ti0n}
+
+Crypto 2
+Folosind stegseek pe imaginea data cu wordlist-ul rockyou din /usr/share/wordlists
+stegseek secrets.jpg /usr/share/wordlists/rockyou.txt
+am obitnut un nou fisier in care avem datele:
+Your key is:3b43473466df04d47922d81a5b1ed38e
+Your IV
+is:953e6aa73a7a565059ab12a47545a76f
+
+Folosind aceasta cheie si intiialization vector decriptam fisierele date cu aes-128-ofb:
+openssl enc -aes-128-ofb -d -K 3b43473466df04d47922d81a5b1ed38e -iv 953e6aa73a7a565059ab12a47545a76f -in flag.enc.enc -out flag.dec
+openssl enc -aes-128-ofb -d -K 3b43473466df04d47922d81a5b1ed38e -iv 953e6aa73a7a565059ab12a47545a76f -in data.enc -out data.dec
+In fisierul data.dec vom obtine 3 valori P,G,X care sunt folosite in algoritmul Elgamal, iar folosind un calculator online https://cryptocalc.giondesign.com.au/elgamal-crypto-calc/ putem decripta cele 69 de perechi de numere obtinute in flag.dec(C1,C2 din algoritm)
+In urma decriptarii vom obtine un sir de caractere ascii:
+065 084 077 123 097 052 052 049 098 049 053 102 101 057 097 051 099 102 053 054 054 054 049 049 057 048 097 048 098 057 051 098 057 100 101 099 055 100 048 052 049 050 055 050 056 056 099 099 056 055 050 053 048 057 054 055 099 102 051 098 053 050 056 057 052 100 049 049 125 
+care convertit va deveni:
+ATM{a441b15fe9a3cf56661190a0b93b9dec7d04127288cc87250967cf3b52894d11}
