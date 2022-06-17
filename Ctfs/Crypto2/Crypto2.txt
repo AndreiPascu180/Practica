@@ -1,0 +1,6 @@
+Folosind stegseek pe imaginea data cu wordlist-ul rockyou din /usr/share/wordlists
+stegseek secrets.jpg /usr/share/wordlists/rockyou.txt
+am obitnut un nou fisier in care avem datele:
+Your key is:3b43473466df04d47922d81a5b1ed38e
+Your IV
+is:953e6aa73a7a565059ab12a47545a76f
