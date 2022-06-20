@@ -3,6 +3,7 @@ cat flag.txt | xxd -r -p | base32 -d | base64 -d | xxd -r -p | base32 -d | base6
 ATM{807d0fbcae7c4b20518d4d85664f6820aafdf936104122c5073e7744c46c4b87} 
 Se observa din formatul datelor comanda care urmeaza: daca sunt doar caractere hexa se foloseste xxd -r (reverse) si -p(pt afisare in stream de caractere), daca la final sunt mai mult de 2 egaluri se foloseste base32 , altfel base64 
 
+
 Networking 1
 Aplicam filtrul icmp.type == 0 pentru a vizualiza doar pachetele de tip icmp echo reply si in ordinea inregistrariipachetelor incercam sa gasim inceputul flagului CSSC{ si apoi urmarim caracterele din aceeasi pozitie cu cele gasite pentru a reface flagul din interiorul {}.
 CSSC{ech0_request_3cho_r3ply}

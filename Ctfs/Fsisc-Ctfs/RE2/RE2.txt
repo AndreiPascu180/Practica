@@ -1,0 +1,13 @@
+ATM{VHJ5IGhhcmRlciFUcnkgaGFyZGVyIVRyeSBoYXJkoXIh+Eh}
+
+41 54 4D - codificarea hex pt 'ATM'
+
+08048717 - adresa la care incepe flagul criptat
+
+am deschis executabilul secret in ghidra si ida pro si cautand in codul assembly dupa sirul de caractere 'Try Harder' (care se afiseaza cand se ruleaza executabilul)
+am ajuns la o zona de memorie unde sunt stocate mai multe siruri de caractere printre care si flagul criptat scris mai sus
+
+am vizionat si tutorialele de la john hammond:
+https://www.youtube.com/watch?v=oTD_ki86c9I&list=PL1H1sBF1VAKUp9mElvX079qK3UNI2b3ek&index=9
+https://www.youtube.com/watch?v=Tmdnsre9z7s&list=PL1H1sBF1VAKUp9mElvX079qK3UNI2b3ek&index=3
+https://www.youtube.com/watch?v=VwJuyVTLmjE&list=PL1H1sBF1VAKUp9mElvX079qK3UNI2b3ek&index=4

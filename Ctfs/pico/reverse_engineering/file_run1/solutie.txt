@@ -1,0 +1,2 @@
+Oferim drepturi de executiei programului descarcat si rulandu-l obtinem flag-ul
+picoCTF{U51N6_Y0Ur_F1r57_F113_e5559d46}

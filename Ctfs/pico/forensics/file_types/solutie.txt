@@ -1,0 +1,14 @@
+La fiecare pas de dezarhivare folosim comanda file pentru a vedea ce utilitar trebuie folosit pentru a dezarhiva
+prima oara folosim sh
+ar -x
+cpio --file flag -i
+bunzip2
+gunzip flag.gz (a trebuit redenumit fisierul flag.out obtinut anterior)
+lzip format -> unlzip flag
+unlz4
+unlzma flag.lzma (a trebuit redenumit cu extensia .lzma)
+lzop -d flag.lzop(redenumit cu extensia)
+lzip -d flag
+unxz flag.xz(redenumit)
+cat flag | xxd -r -p ->
+picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_79b01c26}

@@ -1,0 +1,3 @@
+Am realizat un script care face transformarile descrise in cerinta asupra datelor. M-am folosit de versiunea functiei pow din python care cand primeste 3 argumente realizeaza 'the modular inverse', mai departe doar am modificat indexii cu -1 pentru ca de aceasta data maparea se face pentru numarul 1 la prima litera din alfabet(indexul 0 din vectorul de litere ascii_uppercase)
+Dupa rularea scriptului am obtinut flag-ul:
+picoCTF{1NV3R53LY_H4RD_DADAACAA}
