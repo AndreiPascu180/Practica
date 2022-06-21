@@ -1,0 +1,4 @@
+Analizand codul putem observa ca se cripteaza inputul cu base64, iar in functie de verificare a parolei avem hash-ul parolei corecte.
+Am pus acel hash intr-un fisier separat encodedkey.txt si am decriptat continutul cu comanda base64 -d encodedkey.txt si am obtinut flag-ul
+pl3as3_l3t_m3_1nt0_th3_saf3 pe care trebuie sa-l introducem in formatul specific
+picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}

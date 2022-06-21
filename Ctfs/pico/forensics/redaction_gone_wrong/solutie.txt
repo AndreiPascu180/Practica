@@ -1,0 +1,4 @@
+Am folosit un pdf viewer: atril sau evince pentru a deschide fisierul dat si selectand tot textul putem sa facem highlight si la cel cu fundal negru si astfel putem vedea flag-ul
+picoCTF{C4n_Y0u_S33_m3_fully}
+
+Putem de asemenea folosi comanda pdftotext pentru a obtine tot textul 'readable' si in fisierul .txt vom avea si flag-ul

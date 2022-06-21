@@ -1,0 +1,3 @@
+Deschizand programul dat putem observa parola cu care se compara inputul si daca o introducem pe aceea vom obtine flag-ul decriptat:
+picoCTF{p47ch1ng_l1f3_h4ck_f01eabfa}
+Putem de asemenea sa modificam programul si sa stergem toate liniile din functia de logare si sa lasam doar cele 2 linii cu functia de decriptare a continutului flag-ului si print-ul flagului

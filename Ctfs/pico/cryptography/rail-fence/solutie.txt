@@ -1,0 +1,6 @@
+Folosind un tool online de decryptare a acestui cipher obtinem flagul:
+WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_83F6D8D7
+tool-ul folosit pentru datele criptate din message.txt:
+https://www.boxentriq.com/code-breaking/rail-fence-cipher
+
+De asemenea am creat si un script in pyhton care decripteaza un mesaj aflat intr-un fisier transmis ca parametru

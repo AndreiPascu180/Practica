@@ -1,0 +1,7 @@
+Am folosit un tool online de decodificare a fisierelor audio continand cod morse:https://morsecode.world/international/decoder/audio-decoder-adaptive.html si am obtinut string-ul din flag:
+
+
+WH47 H47H 90D W20U9H7
+
+care va deveni flag-ul
+picoCTF{WH47_H47H_90D_W20U9H7}
