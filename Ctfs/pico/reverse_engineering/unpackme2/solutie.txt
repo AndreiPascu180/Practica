@@ -1,0 +1,3 @@
+Folosim upx -d pe fisierul descarcat apoi il putem analiza in ghidra si in main putem observa un if asemanator cu un challenge anterior si valoarea cu care se compara 754635 (transformata in decimal) va fi "the favorite number" cerut.
+Ruland programul si punand numarul obtinut avem flagul
+picoCTF{up><_m3_f7w_e510a27f}

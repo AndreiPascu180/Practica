@@ -1,0 +1,5 @@
+Am incercat tool-urile cunoscute de stego pe fisierul dat:
+steghide -e
+stegseek
+binwalk
+zsteg -> care ne-a rezultat flag-ul

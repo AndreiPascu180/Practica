@@ -1,0 +1,5 @@
+Analizand pachete putem da follow tcp stream pe oricare pachet in care observam replici de conversatie in engleza si apoi
+putem salva intreaga conversatie intr-un fisier conversatie.txt. Acolo observam o comanda de decriptare a unui fisier file.des3 cu un salt, iar din conversatie observam ca pe portul 9002 se transmite informatia criptata, iar adaugand coloane pentru a vedea si porturile pe care s-au transmis pachetele putem da follow tcp stream pe oricare pachet transmis/primit pe portul 9002 si putem salva continutul criptat intr-un fisier file.des3 ca raw data.
+Ruland apoi comanda openssl din conversatie obtinem flagul:
+openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123
+picoCTF{nc_73115_411_dd54ab67}

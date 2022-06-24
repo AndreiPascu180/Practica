@@ -1,0 +1,2 @@
+Am folosit autopsy pentru a analiza imaginea data si cautand dupa fisierul "flag" gasim in /root/myfolder un fisier flag care contine in hex flag-ul
+picoCTF{by73_5urf3r_adac6cb4}

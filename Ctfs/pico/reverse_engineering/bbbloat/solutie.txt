@@ -1,0 +1,4 @@
+Analizand codul in ghidra putem observa in functia in care exista string-ul "What's my favorite number?"
+ca exista un if care compara o variabila(cea in care se citeste inputul userului) cu o valoare hex care transformata este
+0x86187 = 549255 si daca introducem valoarea aceasta la rularea programului obtinem flagul:
+picoCTF{cu7_7h3_bl047_695036e3}

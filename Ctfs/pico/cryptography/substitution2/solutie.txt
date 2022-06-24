@@ -1,0 +1,5 @@
+Folosind tool-ul online quiqiup putem decripta partial flag-ul
+fstwTXA{P6C4U_4P41L515_15_73R10B5_702A03AT} in 
+pico c t f n r m ny duff c
+Problema este ca in restul textului nu am mai avut cifre deci nu s-au putut decripta corect, insa literele au fost decodate. Deci daca inlocuim in flag-ul criptat literele decriptate in ordine obtinem:
+picoCTF{n6r4m_4n41y515_15_73d10u5_702f03fc}

@@ -1,0 +1,4 @@
+Folosind programul jd-gui putem decompila clasa java data si analiza codul.
+Astfel daca vom copia codul intr-un alt fisier, iar de acolo extragem doar caracterele din if-uri care impreunate alcatuiesc flagul(folosindu-ne de find in sublime cu o expresie regulata '(.)') apoi putem extrage flag-ul cu o comanda.
+cat flag.txt | tr -d "'" | tac | tr -d "\n"
+picoCTF{700l1ng_r3qu1r3d_9332a6be}

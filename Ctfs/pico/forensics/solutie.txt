@@ -1,3 +1,0 @@
-Luand pachetele la rand putem observa in campul de date intr-unul din ele flag-ul:
-echo "7020692063206f204320542046207b207020342063206b20332037205f2035206820342072206b205f20622039206420352033203720362035207d0a" | xxd -r -p | tr -d " " ->
-picoCTF{p4ck37_5h4rk_b9d53765}
